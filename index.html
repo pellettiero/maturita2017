@@ -4,23 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <title>Startup in Italia | Pellegrini Michele</title>
-    
+
     <meta name="description" content="Presentazione per esami di Stato 2017" />
     <meta name="author" content="Pellegrini Michele" />
 <!-- highlight.js theme -->
     <link rel="stylesheet" href="modules/impress.js/extras/highlight/styles/github.css">
 
-        
+
     <!--
-        Styles specific for this example presentation. 
+        Styles specific for this example presentation.
     -->
     <link href="css/markdown-slides.css" rel="stylesheet" />
     <link href="css/devopsy.css" rel="stylesheet" />
-    <link href="css/effects.css" rel="stylesheet" />
     <link rel="stylesheet" href="fonts/material-icons.css">
     <link rel="stylesheet" href="css/bottom-navigation.css">
 
-    
+
 </head>
 
 <body class="impress-not-supported">
@@ -35,9 +34,12 @@
 # Startup in Italia
 ### Pellegrini Michele - 5ES
 </div>
+    <div style="transform: perspective(600px) rotateX(60deg) translateY(10em);">
+        3D
+    </div>
 
 <div id="markdown" class="step slide markdown" data-rel-x="0" data-rel-y="900">
-# Markdown 
+# Markdown
 ## to author Impress.js presentations
 
 * This presentation was written entirely in Markdown
@@ -51,7 +53,7 @@
 * Provided by [Markdown.js](https://github.com/evilstreak/markdown-js) in [extras/](https://github.com/henrikingo/impress.js/tree/myfork/extras)
 * Jot down your bullet points in *Markdown* & have it automatically converted to HTML
 * Note: The Markdown is converted into a presentation client side, in the browser. This is unlike
-  existing tools like [Hovercraft](https://github.com/regebro/hovercraft) and 
+  existing tools like [Hovercraft](https://github.com/regebro/hovercraft) and
   [markdown-impress](http://binbinliao.com/markdown-impress/) where you generate a new
   html file on the command line.
 * This combines the ease of typing Markdown with the full power of impress.js HTML5+CSS3+JavaScript!
@@ -85,7 +87,7 @@ are converted to HTML first, then colored by Highlight.js:
         var init = function () {
             if (initialized) { return; }
             execPreInitPlugins();
-            
+
             // First we set up the viewport for mobile devices.
             // For some reason iPad goes nuts when it is not done properly.
             var meta = $("meta[name='viewport']") || document.createElement("meta");
@@ -93,7 +95,7 @@ are converted to HTML first, then colored by Highlight.js:
             if (meta.parentNode !== document.head) {
                 meta.name = 'viewport';
                 document.head.appendChild(meta);
-            }        
+            }
 
 -----
 
@@ -105,7 +107,7 @@ are converted to HTML first, then colored by Highlight.js:
 
 * Attributes from `div.step` element are simply repeated.
   * Better use relative positioning, lest your slides will all be on top of each other.
-* If you need to set some attributes, just use HTML and create a div element, then write 
+* If you need to set some attributes, just use HTML and create a div element, then write
   Markdown inside each div.
 </div>
 
@@ -117,7 +119,7 @@ are converted to HTML first, then colored by Highlight.js:
 
 <div id="tilted-slide" class="step slide markdown" data-rotate="-85" data-x="2000" data-y="2000" data-z="1000" data-scale="4">
 # Simplicity of Markdown & Full power of Impress.js
-  
+
 * This slide sets its own `rotate`, `x`, `y`, and even `z` coordinates
 * Note that the Mother Teresa slide earlier was pimped with some custom CSS, all the while
   the content was written in simple Markdown.
@@ -155,8 +157,8 @@ var disableEffectsCss = function(){
 <p>Just to emphasize my point, this last slide allows you to use a JavaScript powered menu to
 toggle the CSS style:</p>
 
-<p><a href="#" onclick="enableBwCss();" class="css-menu-bw">Black &amp; white</a>, 
-<a href="#" onclick="enableDevopsCss();" class="css-menu-devopsy">Devopsy</a>, 
+<p><a href="#" onclick="enableBwCss();" class="css-menu-bw">Black &amp; white</a>,
+<a href="#" onclick="enableDevopsCss();" class="css-menu-devopsy">Devopsy</a>,
 <a href="#" onclick="enableEffectsCss();" class="css-menu-effects">Effects overload</a></p>
 
 <p>Simplicity of Markdown married with full power of Impress.js!</p>
@@ -170,29 +172,29 @@ toggle the CSS style:</p>
 </div>
 
 
-  <div class="nav-bottom" id="nav-item-1">
+  <div class="nav-bottom" id="nav-item-1" style="display:none;">
     <input type="radio" name="name" class="nav-toggle" id="item-1" checked>
     <label class="nav-bottom-item" for="item-1">
       <i class="material-icons">gavel</i>
-      <span class="nav-bottom-text">Diritto / Ec. Politica</span>
+      <span class="nav-bottom-text">Legislazione</span>
     </label>
 
     <input type="radio" name="name" class="nav-toggle" id="item-2">
     <label class="nav-bottom-item" for="item-2">
-      <i class="material-icons">assessment</i>
-      <span class="nav-bottom-text">Ec. Aziendale</span>
+      <i class="material-icons">lightbulb_outline</i>
+      <span class="nav-bottom-text">Incubatori</span>
     </label>
 
     <input type="radio" name="name" class="nav-toggle" id="item-3">
     <label class="nav-bottom-item" for="item-3">
-      <i class="material-icons">computer</i>
-      <span class="nav-bottom-text">Informatica</span>
+      <i class="material-icons">report_problem</i>
+      <span class="nav-bottom-text">Problemi</span>
     </label>
 
     <input type="radio" name="name" class="nav-toggle" id="item-4">
     <label class="nav-bottom-item" for="item-4">
-      <i class="material-icons">exit_to_app</i>
-      <span class="nav-bottom-text">Conclusione</span>
+      <i class="material-icons">check_circle</i>
+      <span class="nav-bottom-text">Soluzioni</span>
     </label>
   </div>
 
@@ -203,25 +205,16 @@ toggle the CSS style:</p>
 <script type="text/javascript" src="modules/impress.js/extras/markdown/markdown.js"></script>
 <script type="text/javascript">
 var rootElement = document.getElementById( "impress" );
-rootElement.addEventListener( "impress:stepenter", function(event) {
+rootElement.addEventListener( "impress:stepleave", function(event) {
   var currentStep = event.target
   console.log( "Left the Step Element '" + currentStep.id + "'" );
-  if(currentStep.id == "markdown") {
+  if(currentStep.id == "start") {
   document.getElementById("item-2").checked = true;
   }
 
 });
 </script>
-<!-- <script type="text/javascript"> -->
-<!--   document.addEventListener("impress:stepenter",function() { -->
-<!--     x = document.activeElement; -->
-<!--     console.log(x.classList); -->
-<!--     if("impress-on-step-3" in x.classList) -->
-<!--           { -->
-<!--             document.getElementById("item-2").checked = true; -->
-<!--           } -->
-<!--     }) -->
-<!-- </script> -->
+
 <!--
     Include and initialize impress.js.
 -->

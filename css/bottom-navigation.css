@@ -50,13 +50,13 @@ a {
   background: #795548;
 }
 .nav-bottom-item:nth-of-type(2)::after {
-  background: #4CAF50;
+  background: #FF9800;
 }
 .nav-bottom-item:nth-of-type(3)::after {
-  background: #2196F3;
+  background: #F44336;
 }
 .nav-bottom-item:nth-of-type(4)::after {
-  background: #FF9800;
+  background: #4CAF50;
 }
 .nav-bottom-item::before {
   content: '';
