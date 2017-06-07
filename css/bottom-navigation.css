@@ -88,6 +88,7 @@ a {
 }
 .nav-bottom-text {
   font-size: 12px;
+  font-family: "Product Sans";
   white-space: nowrap;
   opacity: 0;
   transform: translateY(-10px);
