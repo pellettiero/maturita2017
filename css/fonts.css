@@ -2,5 +2,12 @@
   font-family: 'Product Sans';
   font-style: normal;
   font-weight: 800;
-  src: local('Product Sans'), local('ProductSans-Regular'), url(fonts/ProductSans-Regular.woff2) format('woff2');
+  src: local('Product Sans'), local('ProductSans-Regular'), url(../fonts/ProductSans-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Roboto Regular'), local('Roboto-Regular'), url(../fonts/roboto/Roboto-Regular.woff2) format('woff2');
 }
