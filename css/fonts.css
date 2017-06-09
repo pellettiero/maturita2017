@@ -1,13 +1,15 @@
 @font-face {
-  font-family: 'Product Sans';
+  font-family: 'Product Sans Regular';
   font-style: normal;
-  font-weight: 800;
-  src: local('Product Sans'), local('ProductSans-Regular'), url(../fonts/ProductSans-Regular.woff2) format('woff2');
+  src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
+  url('../fonts/ProductSans-Regular.woff') format('woff'),
+  url('../fonts/ProductSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto Regular';
     font-style: normal;
-    font-weight: 800;
-    src: local('Roboto Regular'), local('Roboto-Regular'), url(../fonts/roboto/Roboto-Regular.woff2) format('woff2');
+    src: url('../fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/roboto/Roboto-Regular.woff') format('woff'),
+    url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
 }
