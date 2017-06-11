@@ -88,7 +88,7 @@ a {
 }
 .nav-bottom-text {
   font-size: 12px;
-  font-family: "Product Sans";
+  font-family: "Product Sans Regular";
   white-space: nowrap;
   opacity: 0;
   transform: translateY(-10px);
@@ -106,6 +106,10 @@ a {
 }
 .nav-toggle:checked + .nav-bottom-item .material-icons {
   transform: translateY(-10px);
+  color: rgba(255, 255, 255, 1);
+}
+.nav-toggle + .nav-bottom-item .material-icons {
+    color: rgba(255, 255, 255, 0.3);
 }
 .nav-toggle:checked + .nav-bottom-item .nav-bottom-text {
   opacity: 1;
