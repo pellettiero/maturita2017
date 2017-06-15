@@ -210,23 +210,77 @@ Città come per es. Rovigo:
 * *bassa* concorrenza
 * *alta* competenza
 * nuove *tecnologie*, *idee*, *vantaggi fiscali*
-
 </div>
 
 <div id="problemi" class="step slide markdown" data-rel-x="2000" data-rel-y="0">
+# Perchè l'Italia non è "meta per startup"?
+
+## Nessuna esperienza imprenditoriale
+   * legge Italiana *complicata*, tasse *pesanti* e impegni *onerosi*
+   * gestire un'impresa *non è cosa semplice*, soprattutto se si possiede solo *un'idea*
+   * *rischio* d'impresa, *fallimento*
 
 </div>
 
-<div class="step slide markdown" data-rel-x="0" data-rel-y="900">
+<div id="RD" class="step slide markdown" data-rel-x="0" data-rel-y="900">
+## Ricerca e sviluppo quasi inesistenti
+* università, laureati e ricercatori *non brevettano*
+* mancando l'esperienza, vi è una tendenza a *non mettere in campo la propria idea*
+* spesso i brevetti sono **venduti** o messi in **outsourcing** ad aziende estere
+* *incapacità* di gestire un brevetto
+
+**È necessario più investimento in Ricerca&Sviluppo!**
+
+Più passione per le idee!
+
+> I brevetti devono essere un **"launchpad"** per spingere a formare un'impresa!
 </div>
 
-<div id="soluzioni" class="step slide markdown" data-rel-x="2000" data-rel-y="0">
-
+<div id="soluzioni" class="step slide" data-rel-x="2000" data-rel-y="0">
+<h1>Soluzioni?</h1>
+<ul>
+<li>Decreto Legge 179/2012:
+<ul>
+<li><em>Incubatori Certificati</em></li>
+<li>Startup <em>innovative</em>, benefici fiscali...</li>
+</ul></li>
+<li><strong>Brevetti</strong> e <strong>marchi</strong>, <strong>software</strong>...</li>
+<li>Più <b>ricerca e sviluppo</b>, <b>innovazione</b> e <b>flessibilità</b></li>
+</ul>
 </div>
 
-<div class="step slide markdown" data-rel-x="0" data-rel-y="900">
+<div id="compcenter" class="step slide" data-rel-x="0" data-rel-y="900">
+<h1>Competence Centers</h1>
+<img alt="graph" src="images/graph.svg" style="width:25%;position: relative;left: -35%;"/>
+<p style="
+    position: absolute;
+    padding: 470px;
+    top: -320px;
+    left: -400px;
+          ">Utilizzare i <b>Digital Innovation Labs</b> per comunicare tra centri ricerca e imprese</p>
+<p style="
+    position: absolute;
+    padding: 470px;
+    top: -130px;
+    left: 100px;
+          ">Tradurre la <b>"tecnicalità"</b> in progetti concreti (profitto)</p>
 </div>
 
+<div id="conclusione" class="step stop slide markdown" data-rel-x="0" data-rel-y="0" data-rel-z="20000">
+# Grazie per l'attenzione!
+Questo progetto è stato *prodotto interamente* in HTML/CSS/JS.  
+Il codice sorgente è **gratuito** e liberamente disponibile sotto licenza **MIT**.
+
+### github.com/pellettiero/maturita2017
+Inoltre disponibile live: **pellettiero.github.io/maturita2017**
+
+Ringraziamenti:
+
+* @henrikingo e @bartaz per **impress.js**.
+* Sig. **Previato Alberto**, e lo staff t2i per l'intervista rilasciatami
+* **PoPlab**, per il loro bellissimo laboratorio :)
+* Ed infine, voi!
+</div>
 
 <div id="business-plan" class="step skip slide" data-rel-z="5000">
 placeholder
@@ -236,10 +290,6 @@ placeholder2
 </div>
 
 </div>
-
-<div id="overview" class="step" data-x="5000" data-y="4000" data-scale="10" style="pointer-events: none;" data-rotate="5">
-</div>
-
 
 </div>
 
@@ -309,7 +359,9 @@ placeholder2
         if(currentStep.id == "soluzioni") {
             document.getElementById("item-4").checked = true;
         }
-
+        if(currentStep.id == "conclusione") {
+            document.getElementById("bottom-bar").classList.add("slide-out-bottom");
+        }
     });
     rootElement.addEventListener( "impress:stepleave", function(event) {
         var currentStep = event.target
